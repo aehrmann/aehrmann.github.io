@@ -11,25 +11,84 @@ body {
 }
 
 body {
-  background-color: #263238;
-  font-family: Nunito, Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                    url('images/chicago-loop.jpg');
+  font-family: 'Lato', Helvetica, 'Helvetica Neue', Arial, sans-serif;
   color: #ECF0F1;
   font-size: 18px;
-}
-
-h1 {
-  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10% 0;
 }
 
 a {
-  display: block;
-  color: inherit;
+  color: #ECF0F1;
   text-decoration: none;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 100;
 }
 
-a:hover {
-  text-decoration: underline;
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.information, .content {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  padding: 2rem 0;
+}
+
+.information {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.information h1,
+.information p,
+.information .contact-icons {
+
+}
+
+.information h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.information p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.contact-icons {
+  padding-top: 1rem;
+}
+
+.contact-icons a {
+  color: #ECF0F1;
+  margin-left: 8%;
+}
+
+.content {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.content h2 {
+
+}
+
+.content p {
+  font-weight: 300;
+}
+
+.content .projects-heading {
+  margin-bottom: 1rem;
+}
+.project p {
+  display: none;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
 }

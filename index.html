@@ -6,12 +6,47 @@
     <meta charset="UTF-8">
 
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/flexboxgrid/dist/flexboxgrid.min.css">
     <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
-    <h1>Ari Ehrmann's Portfolio</h1>
-    <a href="projects/">Current Projects</a>
-  </body>
+    <div class="wrapper row">
+      <section class="information col-sm-5 col-sm-offset-1">
+        <h1>ari ehrmann</h1>
+        <p>front-end web developer /</p>
+        <p>creative problem solver</p>
+        <section class="contact-icons">
+          <a href="https://github.com/aehrmann"><i class="fa fa-github fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/ariehrmann"><i class="fa fa-linkedin-square fa-2x"></i></a>
+          <a href="mailto:ari.ehrmann@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+        </section>
+      </section>
+
+      <section class="content col-sm-5 col-sm-offset-1">
+        <h2 class="projects-heading">current projects</h2>
+        <div class="projects">
+          <div class="project pi-fi">
+            <h2><a href="#">pi-fi</a></h2>
+            <p>exploring the HTML5 Web Audio API with 
+              angular.js and the digits of pi</p>
+          </div>
+
+          <div class="project aptamigo">
+            <h2><a href="#">aptamigo</a></h2>
+            <p>Startup Institute partner project</p>
+          </div>
+
+          <div class="project data-visualization">
+            <h2><a href="#">data visualization</a></h2>
+            <p>TBD</p>
+          </div>
+        </section>
+      </div>
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="main.js"></script>
+    </body>
 </html>
