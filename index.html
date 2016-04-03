@@ -2,46 +2,54 @@
 <html lang="en">
   <head>
     <title>Ari Ehrmann</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bower_components/flexboxgrid/dist/flexboxgrid.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
 
   <body>
-    <div class="wrapper row">
-      <section class="information col-sm row">
-        <h1 class="col-sm-6">ari ehrmann</h1>
-        <p>front-end web developer / creative problem solver</p>
-        <section class="contact-icons col-sm-4">
+    <main>
+
+      <section class="info">
+        <h1>ari ehrmann</h1>
+        <p>front-end web developer</p>
+        <p>problem solver</p>
+        <p>part-time creative</p>
+        <section class="contact-icons">
           <a href="https://github.com/aehrmann"><i class="fa fa-github fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/ariehrmann"><i class="fa fa-linkedin-square fa-2x"></i></a>
           <a href="mailto:ari.ehrmann@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
         </section>
       </section>
 
-      <section class="content col-sm">
-        <h2 class="projects-heading">current projects</h2>
-        <div class="projects">
-          <div class="project pi-fi">
-            <p><strong><a href="#">pi-fi</a></strong>: music in the key of Pi</p>
-          </div>
-
-          <div class="project aptamigo">
-            <p><strong><a href="#">aptamigo</a></strong>: Startup Institute partner project</p>
-          </div>
-
-          <div class="project data-visualization">
-            <p><strong><a href="#">data visualization</a></strong>: TBD</p>
-          </div>
+      <section class="projects">
+        <section class="project pi-fi">
+          <h2>Pi-fi</h2>
+          <p>Exploring the unique propertis of &pi;, using the HTML5 Web Audio API
+            and Angular.js</p>
         </section>
-      </div>
-      <script src="bower_components/jquery/dist/jquery.js"></script>
-      <script src="main.js"></script>
-    </body>
+
+        <section class="project aptamigo">
+          <h2>AptAmigo</h2>
+          <p>Basic redesign of AptAmigo's current platform, as part of Startup
+            Institute's partner project</p>
+        </section>
+
+        <section class="project graffiti">
+          <h2>Graffiti in Chicago</h2>
+          <p>Mapping graffiti over Chicago's 50 wards, using D3.js</p>
+        </section>
+      </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"
+    integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  </body>
 </html>
