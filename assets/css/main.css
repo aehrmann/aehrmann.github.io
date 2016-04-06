@@ -6,26 +6,18 @@
 
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
                     url('../images/chicago-loop.jpg');
+  background-size: cover;
   color: #ECF0F1;
   font-family: 'Lato', Helvetica, 'Helvetica Neue', Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 16px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
 h1, h2, h3, p {
@@ -37,29 +29,30 @@ h1, h2, h3, p {
 /* Information ======================================== */
 
 .info {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid;
-  padding-bottom: 2rem;
+  border-bottom: 1px solid;
+  margin: 0 auto;
+  padding: 5vh 0;
   text-align: center;
+  width: 90%;
+}
+
+.info > div {
+  margin-bottom: 1rem;
 }
 
 .info h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
-.info p {
-  font-size: 1.5rem;
-  margin-bottom: 1.7rem;
+.info .tagline p {
+  font-size: 1.25rem;
 }
 
-.info .contact-icons {
-  width: 40%;
-  margin: 0 auto;
+.contact-icons {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-
+  margin: 0 auto;
+  width: 50%;
 }
 
 .info a {
@@ -69,22 +62,29 @@ h1, h2, h3, p {
 
 /* Projects ======================================== */
 
-.projects {
-  width: 80%;
+main {
+  padding-top: 1rem;
 }
 
-.project-listing {
-  text-align: center;
+.projects {
+  margin: 0 auto;
+  width: 90%;
 }
 
 .projects h2 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
   text-align: center;
 }
+
 .project h3 {
   color: #fff;
-  margin-bottom: 1rem;
+}
+
+.project i {
+  display: inline-block;
+  margin-left: 0.5rem;
 }
 
 .projects a {
@@ -92,24 +92,11 @@ h1, h2, h3, p {
   font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
-  padding: 0 0.7rem;
-  border-left: 3px solid;
-  border-right: 3px solid;
   transition: all 300ms;
 }
 
-.project a:hover {
-  padding-right: 20%;
-  padding-left: 20%;
-}
-
 .project p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
   margin-bottom: 1.5rem;
 }
-
-
