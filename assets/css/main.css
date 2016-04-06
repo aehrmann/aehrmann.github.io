@@ -6,7 +6,6 @@
 
 html,
 body {
-  width: 100%;
   height: 100%;
 }
 
@@ -17,7 +16,11 @@ body {
   color: #ECF0F1;
   font-family: 'Lato', Helvetica, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-top: 1rem;
   position: relative;
+  width: 80%;
 }
 
 h1, h2, h3, p {
@@ -25,27 +28,29 @@ h1, h2, h3, p {
   margin: 0;
 }
 
+a {
+  color: #fff;
+}
 
 /* Information ======================================== */
 
 .info {
   border-bottom: 1px solid;
-  margin: 0 auto;
-  padding: 5vh 0;
   text-align: center;
-  width: 90%;
-}
-
-.info > div {
-  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .info h1 {
-  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.info .tagline,
+.info .contact-icons {
+  margin-bottom: 1rem;
 }
 
 .info .tagline p {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .contact-icons {
@@ -55,19 +60,11 @@ h1, h2, h3, p {
   width: 50%;
 }
 
-.info a {
-  color: #fff;
-}
-
 
 /* Projects ======================================== */
 
-main {
-  padding-top: 1rem;
-}
-
 .projects {
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   width: 90%;
 }
 
@@ -75,16 +72,23 @@ main {
   font-size: 2rem;
   font-weight: 100;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
 .project h3 {
   color: #fff;
-  display: inline-block;
-  font-size: 1.75rem;
-  padding-bottom: 1rem;
+  font-size: 1.5rem;
   border-bottom: 1px solid;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
+
+.project p {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
 
 .project i {
   display: inline-block;
@@ -97,12 +101,6 @@ main {
   font-size: 1.5rem;
   text-decoration: none;
   transition: all 300ms;
-}
-
-.project p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
 }
 
 /* Responsive styling ======================================== */
@@ -127,8 +125,8 @@ main {
     padding-top: 5vh;
   }
   .projects h2 {
-    margin-bottom: 3rem;
-    padding-top: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .project-listing {
