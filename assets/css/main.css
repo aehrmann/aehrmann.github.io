@@ -64,11 +64,12 @@ a {
 /* Projects ======================================== */
 
 .projects {
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   width: 90%;
 }
 
 .projects h2 {
+  margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 100;
   margin-bottom: 1rem;
@@ -77,6 +78,7 @@ a {
 }
 
 .project h3 {
+  border-bottom: 1px solid;
   color: #fff;
   font-size: 1.5rem;
   border-bottom: 1px solid;
@@ -148,4 +150,3 @@ a {
     font-size: 1.25rem;
   }
 }
-
