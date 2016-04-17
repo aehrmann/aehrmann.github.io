@@ -1,0 +1,12 @@
+/*hero image*/
+body[data-controller="pages"][data-action="index"] .hero {
+  background:
+    radial-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+      ),
+      url('../assets/images/hero-interior.jpg');
+      background-position: 50%;
+      background-repeat: no-repeat;
+      height: 660px;
+}

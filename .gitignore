@@ -1,6 +1,5 @@
 bower_components
 
 # ignore project repositories but maintain links
-projects/aptamigo
 projects/pi-fi
 projects/prog-lang-viz
